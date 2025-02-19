@@ -437,7 +437,7 @@ body{
     flex-direction: column;
     justify-content: center;
     margin-top: 97px;
-    width: 370px;
+    max-width: 370px;
     height: 36px;
     font-family: 'Poppins';
     font-style: normal;
@@ -472,7 +472,6 @@ body{
 .trending-card001 {
     width: 100%;
     max-width: 570px;
-    height: 670px;
     background: #FFFFFF;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.05); 
     border-radius: 20px;
@@ -868,7 +867,7 @@ body{
     }
 
     .blog-card-container{
-        margin: 0 50px;
+        padding: 0 30px;
     }
 
     .hot-tag{
@@ -1063,6 +1062,16 @@ body{
         line-height: 21px;
     }
 
+    .button{
+        width: 105px;
+    }
+
+}
+
+@media(max-width:730px){
+    .description{
+        display: none;
+    }
 }
 
 @media(max-width:705px){
@@ -1166,4 +1175,29 @@ body{
         font-size: 15px;
 
     }
+
+    .date001{
+        display: none;
+    }
+
+    .date-horizontal{
+        display: none;
+    }
+
+    .title{
+        left: 17px;
+    }
+
+    .author-name{
+        left: 112px;
+    }
+
+    .arrow-pointer{
+        display: none;
+    }
+
+    .read-more{
+        left: 68px;
+    }
+
 }
