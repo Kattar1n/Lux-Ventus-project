@@ -33,9 +33,7 @@ body{
 }
 
 .search p{
-    transform: translateY(-200%);
     display: none;
-    
 }
 
 .search-icon{
@@ -44,7 +42,7 @@ body{
 
 .nav{
     display: flex;
-    gap: 8px;
+    gap: 33px;
     align-items: center;
     text-align: center;
 }
@@ -796,7 +794,8 @@ body{
 
 /* footer */
 
-@media(max-width:1439px){
+@media(max-width:1438px){
+
     .cards{
         display: flex;
         gap: 72px;
@@ -817,6 +816,10 @@ body{
     .header{
         gap: 0px;
     }
+
+    .nav{
+        gap: 17px;
+    }
 }
 
 @media(max-width:1165px){
@@ -836,7 +839,7 @@ body{
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: -30%;
+    top: -70%;
     right: 1%;
     background-color: rgba(76, 224, 215, 0.1);
     border-radius: 15px;
@@ -860,7 +863,6 @@ body{
     align-items: center;
     gap: 10px;
     padding-top: 20px;
-    padding-bottom: 8px;
 }
 
 .search p{
@@ -881,9 +883,19 @@ body{
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
+    gap: 15px;
+    padding: 10px;
+}
+
+.nav.active.hiddenScrl{
+    top: -70%;
 }
 
 /* main */
+
+.first-section{
+    padding: 0 50px;
+}
 
 .first-section-content{
     background-position: 70%;
@@ -902,9 +914,18 @@ body{
         padding-right: 15px;
     }
 
+    .first-section{
+        padding: 0 15px;
+    }
+
+    .first-section-content{
+        padding: 40px 15px 42px 16px;
+    }
+
     .logo{
         max-width: 150px;
     }
+
 }
 
 
@@ -918,6 +939,7 @@ body{
         width: 100%;
     }
 }
+
 
 /* Responsive Design */
 @media (max-width: 900px) {
@@ -933,6 +955,41 @@ body{
 
     .content-horizontal {
         width: 100%;
+
+    .cards{
+        gap: 25px;
+    }
+
+    .first-section-content h6{
+        font-size: 10px;
+    }
+
+    .first-section-content h1{
+        font-size: 40px;
+    }
+
+    .first-section-content p{
+        font-size: 16px;
     }
 }
 
+@media(max-width:301px){
+
+    .first-section-content{
+        padding: 35px 5px 42px 5px;
+    }
+
+    .first-section-content h1{
+        font-size: 26px;
+    }
+
+    .first-section-content span{
+        font-size: 40px;
+    }
+
+    .first-section-content p{
+        font-size: 15px;
+
+    }
+}
+}
