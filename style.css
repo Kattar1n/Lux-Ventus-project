@@ -1030,7 +1030,7 @@ body{
     }
 
     .category-badge{
-        width: 105px;
+        width: 130px;
     }
 
     .title{
@@ -1054,12 +1054,42 @@ body{
         left: 30px;
     }
 
+    .author-details-horizontal{
+        gap: 301px;
+    }
 
+    .description{
+        font-size: 15px;
+        line-height: 21px;
+    }
 
 }
 
 @media(max-width:705px){
     .hot-tag{
+        display: none;
+    }
+}
+
+@media(max-width:584px){
+
+    .author-details-horizontal{
+        gap: 27px;
+    }
+
+    .description{
+        line-height:normal;
+    }
+
+    .title{
+        line-height: normal;
+    }
+
+    .date{
+        display: none;
+    }
+
+    .description{
         display: none;
     }
 }
